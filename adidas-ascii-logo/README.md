@@ -2,6 +2,8 @@
 
 This challenge consists of implementing a function which, with the width of the stripe, returns the adidas logo using `@` character.
 
+_Extra:_ the goal is not only to return the adidas logo, but implementing the function with the less number of characters possible.
+
 ## Requirements
 
 It has to satisfy the next requirements:
