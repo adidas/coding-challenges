@@ -1,0 +1,24 @@
+{
+  "name": "adidas-ascii-logo-javascript",
+  "version": "1.0.0",
+  "description": "adidas ASCII logo: JavaScript",
+  "author": "Jaime Pastor <moelders@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adidas/coding-challenges.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint *.js test/**/*.js",
+    "test": "jest --config jest.config.js"
+  },
+  "keywords": [
+    "challenge",
+    "javascript",
+    "adidas"
+  ],
+  "devDependencies": {
+    "build-tools-javascript": "1.0.1",
+    "build-tools-jest": "1.0.1"
+  }
+}
