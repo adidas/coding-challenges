@@ -1,6 +1,6 @@
 # adidas ASCII logo
 
-This challenge consists of implementing a function which, given the width of a stripe, returns the adidas logo using `@` character.
+This challenge consists of implementing a function which, given the width of a stripe, returns the adidas three stripes logo using `@` character.
 
 _Extra challenge:_ will you be able to create the function with the least number of characters possible?
 

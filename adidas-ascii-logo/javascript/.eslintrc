@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "adidas-env/node",
+    "adidas-env/test",
+    "adidas-es9"
+  ],
+  "rules": {
+    "no-magic-numbers": "off"
+  }
+}
