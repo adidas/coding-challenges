@@ -1,0 +1,11 @@
+{
+  "extends": "./node_modules/build-tools-typescript/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "ESNext",
+  },
+  "files": [
+    "index.ts",
+    "test/specs/adidas-ascii-logo.spec.ts"
+  ]
+}

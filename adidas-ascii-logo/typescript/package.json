@@ -1,0 +1,27 @@
+{
+  "name": "adidas-ascii-logo-typescript",
+  "version": "1.0.0",
+  "description": "adidas ASCII logo: TypeScript",
+  "author": "Jaime Pastor <moelders@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adidas/coding-challenges.git"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && node dist/index",
+    "lint": "tslint -p tsconfig.json *.ts test/**/*.ts",
+    "test": "jest --config jest.config.js"
+  },
+  "keywords": [
+    "challenge",
+    "typescript",
+    "adidas"
+  ],
+  "devDependencies": {
+    "build-tools-jest": "1.0.1",
+    "build-tools-typescript": "1.0.1",
+    "build-tools-typescript-jest": "1.0.1",
+    "tslint-eslint-rules": "5.4.0"
+  }
+}
