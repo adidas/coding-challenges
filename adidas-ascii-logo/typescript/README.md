@@ -16,7 +16,7 @@ npm install
 
 ### Testing
 
-To be sure that the altorithm is correct, there are several tests to validate the requirements are met.
+To be sure that the algorithm is correct, there are several tests to validate the requirements are met.
 
 The test run with [Jest][jest] which is installed with the package [build-tools-typescript-jest][build-tools-typescript-jest]. The tests can run with watchers too.
 
