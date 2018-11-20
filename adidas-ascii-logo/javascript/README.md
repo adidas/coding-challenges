@@ -16,7 +16,7 @@ npm install
 
 ### Testing
 
-To be sure that the altorithm is correct, there are several tests to validate the requirements are met.
+To be sure that the algorithm is correct, there are several tests to validate the requirements are met.
 
 The test run with [Jest][jest] which is installed with the package [build-tools-jest][build-tools-jest]. The tests can run with watchers too.
 
@@ -39,7 +39,7 @@ _Note:_ the source files are skipped due to the fact that the code optimizations
 
 ## Running examples
 
-There is a small script ro run the function with some examples:
+There is a small script to run the function with some examples:
 
 ```
 node index
