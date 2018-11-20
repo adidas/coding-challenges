@@ -9,6 +9,7 @@
   },
   "main": "index.js",
   "scripts": {
+    "start": "node index",
     "lint": "eslint *.js test/**/*.js",
     "test": "jest --config jest.config.js"
   },
