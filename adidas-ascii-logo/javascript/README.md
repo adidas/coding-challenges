@@ -39,10 +39,10 @@ _Note:_ the source files are skipped due to the fact that the code optimizations
 
 ## Running examples
 
-There is a small script to run the function with some examples:
+The `index.js` prints the adidas logo using the implemented `createAdidasAsciiLogo()` function with different width parameters:
 
 ```
-node index
+npm run start
 ```
 
 [adidas-ascii-logo]: ../README.md

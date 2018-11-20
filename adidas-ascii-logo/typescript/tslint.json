@@ -1,0 +1,6 @@
+{
+  "extends": [ "tslint-config-adidas" ],
+  "rules": {
+    "no-magic-numbers": false
+  }
+}

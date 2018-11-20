@@ -4,5 +4,5 @@
  * @returns {string} adidas logo.
  */
 module.exports = function(width) {
-  return '';
+  return `${ width }`;
 };
