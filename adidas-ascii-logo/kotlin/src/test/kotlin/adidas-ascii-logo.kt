@@ -1,43 +1,48 @@
-import XCTest
-@testable import ascii_lib
+import ascii.createAdidasAsciiLogo
+import org.junit.Test
+import kotlin.test.assertEquals
 
-final class ascii_libTests: XCTestCase {
 
-    func testWidth2() {
-        let res = """
+class TestSource {
+    @Test
+    fun testWidth2() {
+        val expected = """
             @@
           @@ @@
         @@ @@ @@
-        """.trimmingCharacters(in: .whitespacesAndNewlines)
-        XCTAssertEqual(createAdidasAsciiLogo(width:2),res)
+        """.trim()
+        assertEquals(expected, createAdidasAsciiLogo(2))
     }
 
-    func testWidth3() {
-        let res = """
+    @Test
+    fun testWidth3() {
+        val expected = """
               @@@
                @@@
            @@@  @@@
             @@@  @@@
         @@@  @@@  @@@
          @@@  @@@  @@@
-        """.trimmingCharacters(in: .whitespacesAndNewlines)
-        XCTAssertEqual(createAdidasAsciiLogo(width:3),res)
+        """.trim()
+        assertEquals(expected, createAdidasAsciiLogo(2))
     }
 
-    func testWidth5() {
-        let res = """
+    @Test
+    fun testWidth5() {
+        val expected = """
                   @@@@@
                    @@@@@
              @@@@@  @@@@@
               @@@@@  @@@@@
         @@@@@  @@@@@  @@@@@
          @@@@@  @@@@@  @@@@@
-        """.trimmingCharacters(in: .whitespacesAndNewlines)
-        XCTAssertEqual(createAdidasAsciiLogo(width:5),res)
+        """.trim()
+        assertEquals(expected, createAdidasAsciiLogo(2))
     }
 
-    func testWidth7() {
-        let res = """
+        @Test
+    fun testWidth7() {
+        val expected = """
                       @@@@@@@
                        @@@@@@@
                         @@@@@@@
@@ -47,12 +52,13 @@ final class ascii_libTests: XCTestCase {
         @@@@@@@   @@@@@@@   @@@@@@@
          @@@@@@@   @@@@@@@   @@@@@@@
           @@@@@@@   @@@@@@@   @@@@@@@
-        """.trimmingCharacters(in: .whitespacesAndNewlines)
-        XCTAssertEqual(createAdidasAsciiLogo(width:7),res)
+        """.trim()
+        assertEquals(expected, createAdidasAsciiLogo(2))
     }
 
-    func testWidth9() {
-        let res = """
+            @Test
+    fun testWidth9() {
+        val expected = """
                           @@@@@@@@@
                            @@@@@@@@@
                             @@@@@@@@@
@@ -62,11 +68,13 @@ final class ascii_libTests: XCTestCase {
         @@@@@@@@@   @@@@@@@@@   @@@@@@@@@
          @@@@@@@@@   @@@@@@@@@   @@@@@@@@@
           @@@@@@@@@   @@@@@@@@@   @@@@@@@@@
-        """.trimmingCharacters(in: .whitespacesAndNewlines)
-        XCTAssertEqual(createAdidasAsciiLogo(width:9),res)
+        """.trim()
+        assertEquals(expected, createAdidasAsciiLogo(2))
     }
-    func testWidth16() {
-        let res = """
+
+                @Test
+    fun testWidth16() {
+        val expected = """
                                          @@@@@@@@@@@@@@@@
                                          @@@@@@@@@@@@@@@@
                                           @@@@@@@@@@@@@@@@
@@ -79,12 +87,13 @@ final class ascii_libTests: XCTestCase {
          @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@
           @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@
            @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@
-        """.trimmingCharacters(in: .whitespacesAndNewlines)
-        XCTAssertEqual(createAdidasAsciiLogo(width:16),res)
+        """.trim()
+        assertEquals(expected, createAdidasAsciiLogo(2))
     }
 
-    func testWidth21() {
-        let res = """
+                    @Test
+    fun testWidth21() {
+        val expected = """
                                                   @@@@@@@@@@@@@@@@@@@@@
                                                    @@@@@@@@@@@@@@@@@@@@@
                                                     @@@@@@@@@@@@@@@@@@@@@
@@ -100,17 +109,7 @@ final class ascii_libTests: XCTestCase {
           @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@
            @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@
             @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@
-        """.trimmingCharacters(in: .whitespacesAndNewlines)
-        XCTAssertEqual(createAdidasAsciiLogo(width:21),res)
+        """.trim()
+        assertEquals(expected, createAdidasAsciiLogo(2))
     }
-
-    static var allTests = [
-        ("testWidth2", testWidth2),
-        ("testWidth3", testWidth3),
-        ("testWidth5", testWidth5),
-        ("testWidth7", testWidth7),
-        ("testWidth9", testWidth9),
-        ("testWidth16", testWidth16),
-        ("testWidth21", testWidth21),
-    ]
 }

@@ -2,11 +2,16 @@ package main
 import (
   "fmt"
   "testing"
+  "strings"
 )
 
 type Pair struct {
   pass bool
   message string
+}
+
+func trim(str string) string{
+  return strings.TrimSpace(str)
 }
 
 func checkExpectations(result string,expected string) Pair{
@@ -17,11 +22,11 @@ func checkExpectations(result string,expected string) Pair{
 }
 
 func TestWidth2(t *testing.T) {
-  expected := `
+  expected := trim(`
     @@
   @@ @@
 @@ @@ @@
-  `;
+  `);
 
   result := createAdidasAsciiLogo(2)
   testResult := checkExpectations(result, expected)
@@ -31,14 +36,14 @@ func TestWidth2(t *testing.T) {
 }
 
 func TestWidth3(t *testing.T) {
-  expected := `
+  expected := trim(`
       @@@
        @@@
    @@@  @@@
     @@@  @@@
 @@@  @@@  @@@
  @@@  @@@  @@@
- `;
+ `);
   result := createAdidasAsciiLogo(3)
   testResult := checkExpectations(result, expected)
   if(!testResult.pass){
@@ -47,14 +52,14 @@ func TestWidth3(t *testing.T) {
 }
 
 func TestWidth5(t *testing.T) {
-  expected := `
+  expected := trim(`
           @@@@@
            @@@@@
      @@@@@  @@@@@
       @@@@@  @@@@@
 @@@@@  @@@@@  @@@@@
  @@@@@  @@@@@  @@@@@
-    `
+    `);
 
   result := createAdidasAsciiLogo(5)
   testResult := checkExpectations(result, expected)
@@ -64,7 +69,7 @@ func TestWidth5(t *testing.T) {
 }
 
 func TestWidth7(t *testing.T) {
-  expected := `
+  expected := trim(`
               @@@@@@@
                @@@@@@@
                 @@@@@@@
@@ -74,7 +79,7 @@ func TestWidth7(t *testing.T) {
 @@@@@@@   @@@@@@@   @@@@@@@
  @@@@@@@   @@@@@@@   @@@@@@@
   @@@@@@@   @@@@@@@   @@@@@@@
-    `;
+    `);
 
   result := createAdidasAsciiLogo(7)
   testResult := checkExpectations(result, expected)
@@ -84,7 +89,7 @@ func TestWidth7(t *testing.T) {
 }
 
 func TestWidth9(t *testing.T) {
-  expected := `
+  expected := trim(`
                   @@@@@@@@@
                    @@@@@@@@@
                     @@@@@@@@@
@@ -94,7 +99,7 @@ func TestWidth9(t *testing.T) {
 @@@@@@@@@   @@@@@@@@@   @@@@@@@@@
  @@@@@@@@@   @@@@@@@@@   @@@@@@@@@
   @@@@@@@@@   @@@@@@@@@   @@@@@@@@@
-    `;
+    `);
 
   result := createAdidasAsciiLogo(9)
   testResult := checkExpectations(result, expected)
@@ -104,7 +109,7 @@ func TestWidth9(t *testing.T) {
 }
 
 func TestWidth16(t *testing.T) {
-  expected := `
+  expected := trim(`
                                 @@@@@@@@@@@@@@@@
                                  @@@@@@@@@@@@@@@@
                                   @@@@@@@@@@@@@@@@
@@ -117,7 +122,7 @@ func TestWidth16(t *testing.T) {
  @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@
   @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@
    @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@
-    `;
+    `);
 
   result := createAdidasAsciiLogo(16)
   testResult := checkExpectations(result, expected)
@@ -127,7 +132,7 @@ func TestWidth16(t *testing.T) {
 }
 
 func TestWidth21(t *testing.T) {
-  expected := `
+  expected := trim(`
                                           @@@@@@@@@@@@@@@@@@@@@
                                            @@@@@@@@@@@@@@@@@@@@@
                                             @@@@@@@@@@@@@@@@@@@@@
@@ -143,7 +148,7 @@ func TestWidth21(t *testing.T) {
   @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@
    @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@
     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@
-    `;
+    `);
 
   result := createAdidasAsciiLogo(16)
   testResult := checkExpectations(result, expected)
