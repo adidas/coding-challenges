@@ -2,7 +2,10 @@
 
 This challenge consists of implementing a function which, given the width of a stripe, returns the adidas three stripes logo using `@` character.
 
-_Extra challenge:_ will you be able to create the function with the least number of characters possible?
+- Will you be able to find an ingenious solution?
+- Will you be able to create a comprehensible algorithm with the least number of statements possible?
+
+Check the [steps][steps] to work with this repository and start the challenge.
 
 ## Requirements
 
@@ -51,3 +54,4 @@ Each folder has its own instructions, a main file with the function to be implem
 [**adidas**][adidas]
 
 [adidas]: https://adidas.com/
+[steps]: ../README.md#algorithms
