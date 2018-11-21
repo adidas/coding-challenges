@@ -1,7 +1,7 @@
 import XCTest
-@testable import adidas_ascii_logo
+@testable import ascii_lib
 
-final class adidas_ascii_logoTests: XCTestCase {
+final class ascii_libTests: XCTestCase {
     
     func testWidth2() {
         let res = """
@@ -11,7 +11,7 @@ final class adidas_ascii_logoTests: XCTestCase {
         """
         XCTAssertEqual(createAdidasAsciiLogo(width:2),res)
     }
-
+    
     func testWidth3() {
         let res = """
               @@@
@@ -103,9 +103,14 @@ final class adidas_ascii_logoTests: XCTestCase {
         """
         XCTAssertEqual(createAdidasAsciiLogo(width:21),res)
     }
-    
 
     static var allTests = [
         ("testWidth2", testWidth2),
+        ("testWidth3", testWidth3),
+        ("testWidth5", testWidth5),
+        ("testWidth7", testWidth7),
+        ("testWidth9", testWidth9),
+        ("testWidth16", testWidth16),
+        ("testWidth21", testWidth21),
     ]
 }

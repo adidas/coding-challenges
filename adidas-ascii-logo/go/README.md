@@ -1,11 +1,10 @@
-# adidas ASCII logo: TypeScript
+# adidas ASCII logo: Go
 
 Implementation to resolve the [adidas ASCII logo challenge][adidas-ascii-logo] with Go.
 
 ## Requirements and dependencies
 
-[Go][go] are required to work with the repository.
-
+[Go][go] is required to work with the repository.
 
 ### Testing
 

@@ -3,7 +3,7 @@ import XCTest
 #if !os(macOS)
 public func allTests() -> [XCTestCaseEntry] {
     return [
-        testCase(adidas_ascii_logoTests.allTests),
+        testCase(ascii_mainTests.allTests),
     ]
 }
 #endif
