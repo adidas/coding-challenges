@@ -8,7 +8,7 @@ final class ascii_libTests: XCTestCase {
             @@
           @@ @@
         @@ @@ @@
-        """.trimmingCharacters(in: .whitespacesAndNewlines)
+        """
         XCTAssertEqual(createAdidasAsciiLogo(width:2),res)
     }
 
@@ -20,7 +20,8 @@ final class ascii_libTests: XCTestCase {
             @@@  @@@
         @@@  @@@  @@@
          @@@  @@@  @@@
-        """.trimmingCharacters(in: .whitespacesAndNewlines)
+        """
+        print(res)
         XCTAssertEqual(createAdidasAsciiLogo(width:3),res)
     }
 
@@ -32,7 +33,7 @@ final class ascii_libTests: XCTestCase {
               @@@@@  @@@@@
         @@@@@  @@@@@  @@@@@
          @@@@@  @@@@@  @@@@@
-        """.trimmingCharacters(in: .whitespacesAndNewlines)
+        """
         XCTAssertEqual(createAdidasAsciiLogo(width:5),res)
     }
 
@@ -47,7 +48,7 @@ final class ascii_libTests: XCTestCase {
         @@@@@@@   @@@@@@@   @@@@@@@
          @@@@@@@   @@@@@@@   @@@@@@@
           @@@@@@@   @@@@@@@   @@@@@@@
-        """.trimmingCharacters(in: .whitespacesAndNewlines)
+        """
         XCTAssertEqual(createAdidasAsciiLogo(width:7),res)
     }
 
@@ -62,7 +63,7 @@ final class ascii_libTests: XCTestCase {
         @@@@@@@@@   @@@@@@@@@   @@@@@@@@@
          @@@@@@@@@   @@@@@@@@@   @@@@@@@@@
           @@@@@@@@@   @@@@@@@@@   @@@@@@@@@
-        """.trimmingCharacters(in: .whitespacesAndNewlines)
+        """
         XCTAssertEqual(createAdidasAsciiLogo(width:9),res)
     }
     func testWidth16() {
@@ -79,7 +80,7 @@ final class ascii_libTests: XCTestCase {
          @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@
           @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@
            @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@
-        """.trimmingCharacters(in: .whitespacesAndNewlines)
+        """
         XCTAssertEqual(createAdidasAsciiLogo(width:16),res)
     }
 
@@ -100,7 +101,7 @@ final class ascii_libTests: XCTestCase {
           @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@
            @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@
             @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@
-        """.trimmingCharacters(in: .whitespacesAndNewlines)
+        """
         XCTAssertEqual(createAdidasAsciiLogo(width:21),res)
     }
 
