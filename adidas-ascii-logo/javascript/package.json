@@ -10,7 +10,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "lint": "eslint *.js test/**/*.js",
+    "lint": "eslint src/**/*.js test/specs/**/*.js",
     "test": "jest --config jest.config.js"
   },
   "keywords": [
