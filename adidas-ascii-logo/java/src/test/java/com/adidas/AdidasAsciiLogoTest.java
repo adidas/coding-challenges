@@ -34,18 +34,12 @@ public class AdidasAsciiLogoTest {
     @Test
     public void given_width_equal_3(){
 
-        String expected = new StringBuilder()
+       String expected = new StringBuilder()
                 .append("      @@@")
                 .append("\n")
-                .append("       @@@")
+                .append("   @@@ @@@")
                 .append("\n")
-                .append("   @@@  @@@")
-                .append("\n")
-                .append("    @@@  @@@")
-                .append("\n")
-                .append("@@@  @@@  @@@")
-                .append("\n")
-                .append(" @@@  @@@  @@@")
+                .append("@@@ @@@ @@@")
                 .append("\n")
                 .toString();
         assertEquals(expected, adidasAsciiLogo.createAdidasAsciiLogo(3));
