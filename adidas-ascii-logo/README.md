@@ -30,12 +30,15 @@ Each folder has its own instructions, a main file with the function to be implem
 ## Example
 
 ```
-// Width 3 (step: 1)
+// Width 3 (step: 2)
 // ---------------------------------
 
       @@@
-   @@@ @@@
-@@@ @@@ @@@
+       @@@
+   @@@  @@@
+    @@@  @@@
+@@@  @@@  @@@
+ @@@  @@@  @@@
 
 // Width 9 (step: 3)
 // ---------------------------------
