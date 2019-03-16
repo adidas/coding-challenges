@@ -136,7 +136,7 @@ func TestWidth21(t *testing.T) {
    @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@
     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@`
 
-	result := createAdidasAsciiLogo(16)
+	result := createAdidasAsciiLogo(21)
 	testResult := checkExpectations(result, expected)
 	if !testResult.pass {
 		t.Error(testResult.message)
