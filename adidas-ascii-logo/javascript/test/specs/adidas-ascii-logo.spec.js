@@ -11,7 +11,7 @@ function trim(value) {
 
 describe('adidas ASCII logo', () => {
   it('should throw and exception if the width is less than `2`', () => {
-    expect(() => createAdidasAsciiLogo(1)).toThrowError('Error, minimun width is 2');
+    expect(() => createAdidasAsciiLogo(1)).toThrowError('Error, minimum width is 2');
   });
 
   it('should return the adidas logo given a stripe width of `2`', () => {

@@ -12,8 +12,8 @@ Check the [steps][steps] to work with this repository and start the challenge.
 It has to satisfy the next requirements:
 
 - The function accepts a number which is the width of each stripe in the adidas brand logo.
-   - The minimun width is `2`.
-   - With less than `2` of width, the function throws the exception: `Error, minimun width is 2`.
+   - The minimum width is `2`.
+   - With less than `2` of width, the function throws the exception: `Error, minimum width is 2`.
 - The function returns a string with "at" (`@`), whitespace (` `) and new line (`\n`) characters.
 - The height of smallest stripe, the one on the left side, is the rounded value of the square root of the stripe width.
 - The height of the other stripes is the height of the stripe on its left plus the size of the smallest stripe.
