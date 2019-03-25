@@ -25,8 +25,7 @@ func checkExpectations(result string, expected string) Pair {
 func TestWidth2(t *testing.T) {
 	expected := `    @@
   @@ @@
-@@ @@ @@
-  `
+@@ @@ @@`
 	result := createAdidasAsciiLogo(2)
 	testResult := checkExpectations(result, expected)
 	if !testResult.pass {
@@ -40,8 +39,7 @@ func TestWidth3(t *testing.T) {
    @@@  @@@
     @@@  @@@
 @@@  @@@  @@@
- @@@  @@@  @@@
- `
+ @@@  @@@  @@@`
 	result := createAdidasAsciiLogo(3)
 	testResult := checkExpectations(result, expected)
 	if !testResult.pass {
@@ -55,8 +53,7 @@ func TestWidth5(t *testing.T) {
      @@@@@  @@@@@
       @@@@@  @@@@@
 @@@@@  @@@@@  @@@@@
- @@@@@  @@@@@  @@@@@
-    `
+ @@@@@  @@@@@  @@@@@`
 
 	result := createAdidasAsciiLogo(5)
 	testResult := checkExpectations(result, expected)
@@ -74,8 +71,7 @@ func TestWidth7(t *testing.T) {
          @@@@@@@   @@@@@@@
 @@@@@@@   @@@@@@@   @@@@@@@
  @@@@@@@   @@@@@@@   @@@@@@@
-  @@@@@@@   @@@@@@@   @@@@@@@
-    `
+  @@@@@@@   @@@@@@@   @@@@@@@`
 
 	result := createAdidasAsciiLogo(7)
 	testResult := checkExpectations(result, expected)
@@ -93,8 +89,7 @@ func TestWidth9(t *testing.T) {
            @@@@@@@@@   @@@@@@@@@
 @@@@@@@@@   @@@@@@@@@   @@@@@@@@@
  @@@@@@@@@   @@@@@@@@@   @@@@@@@@@
-  @@@@@@@@@   @@@@@@@@@   @@@@@@@@@
-    `
+  @@@@@@@@@   @@@@@@@@@   @@@@@@@@@`
 
 	result := createAdidasAsciiLogo(9)
 	testResult := checkExpectations(result, expected)
@@ -115,8 +110,7 @@ func TestWidth16(t *testing.T) {
 @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@
  @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@
   @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@
-   @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@
-    `
+   @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@`
 
 	result := createAdidasAsciiLogo(16)
 	testResult := checkExpectations(result, expected)
@@ -140,10 +134,9 @@ func TestWidth21(t *testing.T) {
  @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@
   @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@
    @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@
-    @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@
-    `
+    @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@@`
 
-	result := createAdidasAsciiLogo(16)
+	result := createAdidasAsciiLogo(21)
 	testResult := checkExpectations(result, expected)
 	if !testResult.pass {
 		t.Error(testResult.message)
