@@ -23,7 +23,8 @@ func checkExpectations(result string, expected string) Pair {
 }
 
 func TestWidth2(t *testing.T) {
-	expected := `    @@
+	expected := `
+    @@
   @@ @@
 @@ @@ @@`
 	result := createAdidasAsciiLogo(2)
@@ -34,7 +35,8 @@ func TestWidth2(t *testing.T) {
 }
 
 func TestWidth3(t *testing.T) {
-	expected := `      @@@
+	expected := `
+      @@@
        @@@
    @@@  @@@
     @@@  @@@
@@ -48,7 +50,8 @@ func TestWidth3(t *testing.T) {
 }
 
 func TestWidth5(t *testing.T) {
-	expected := `          @@@@@
+	expected := `
+          @@@@@
            @@@@@
      @@@@@  @@@@@
       @@@@@  @@@@@
@@ -63,7 +66,8 @@ func TestWidth5(t *testing.T) {
 }
 
 func TestWidth7(t *testing.T) {
-	expected := `              @@@@@@@
+	expected := `
+              @@@@@@@
                @@@@@@@
                 @@@@@@@
        @@@@@@@   @@@@@@@
@@ -81,7 +85,8 @@ func TestWidth7(t *testing.T) {
 }
 
 func TestWidth9(t *testing.T) {
-	expected := `                  @@@@@@@@@
+	expected := `
+                  @@@@@@@@@
                    @@@@@@@@@
                     @@@@@@@@@
          @@@@@@@@@   @@@@@@@@@
@@ -99,7 +104,8 @@ func TestWidth9(t *testing.T) {
 }
 
 func TestWidth16(t *testing.T) {
-	expected := `                                @@@@@@@@@@@@@@@@
+	expected := `
+                                @@@@@@@@@@@@@@@@
                                  @@@@@@@@@@@@@@@@
                                   @@@@@@@@@@@@@@@@
                                    @@@@@@@@@@@@@@@@
@@ -120,7 +126,8 @@ func TestWidth16(t *testing.T) {
 }
 
 func TestWidth21(t *testing.T) {
-	expected := `                                          @@@@@@@@@@@@@@@@@@@@@
+	expected := `
+                                          @@@@@@@@@@@@@@@@@@@@@
                                            @@@@@@@@@@@@@@@@@@@@@
                                             @@@@@@@@@@@@@@@@@@@@@
                                              @@@@@@@@@@@@@@@@@@@@@
